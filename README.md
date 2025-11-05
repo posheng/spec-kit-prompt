@@ -1,4 +1,8 @@
 # spec-kit-prompt
+```sh
+uvx --from git+https://github.com/github/spec-kit.git specify init podsite
+```
+
 ```md
 Fill the constitution with the bare minimum requirements for a static web app based on the template.
 ```
