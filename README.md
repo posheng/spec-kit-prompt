@@ -4,7 +4,7 @@ uvx --from git+https://github.com/github/spec-kit.git specify init podsite
 ```
 
 ```md
-Fill the constitution with the bare minimum requirements for a static web app based on the template.
+Fill the constitution with the bare minimum requirements for a static web app based on the template. Translate to Traditional Chinese and save it as a new file.
 ```
 
 ```md
