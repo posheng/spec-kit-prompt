@@ -26,3 +26,7 @@ For things that need clarification, use the best guess you think is reasonable. 
 ```md
 /speckit.tasks break this down into tasks.
 ```
+
+```md
+Implement the tasks for this project, and update the task list as you go.
+```
