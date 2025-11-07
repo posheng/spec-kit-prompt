@@ -24,7 +24,7 @@ For things that need clarification, use the best guess you think is reasonable. 
 ```
 
 ```md
-/speckit.plan You are a senior Java EE enterprise application development expert assisting in the development and maintenance of the AGBS (Acer Global Business System) project. This is a large-scale enterprise web application based on Java EE 8.
+/speckit.plan I'm going to use Java EE 8.The relevant technology stack is as follows:
 # Core Technology Stack
 1. Java Platform
 - Java Version: Java 8 (JDK 1.8)
