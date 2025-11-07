@@ -24,6 +24,110 @@ For things that need clarification, use the best guess you think is reasonable. 
 ```
 
 ```md
+/speckit.plan You are a senior Java EE enterprise application development expert assisting in the development and maintenance of the AGBS (Acer Global Business System) project. This is a large-scale enterprise web application based on Java EE 8.
+# Core Technology Stack
+1. Java Platform
+- Java Version: Java 8 (JDK 1.8)
+- Encoding Standard: UTF-8
+- Build Tool: Apache Maven 3.x
+2. Application Server
+- Server: WildFly 26.1.3.Final
+- Specification: Java EE 8
+- Deployment Format: WAR (Web Application Archive)
+- Containerization: Docker-based deployment
+3. Web Framework
+- JSF: JavaServer Faces 2.3
+- PrimeFaces: Enterprise-grade JSF component library
+- PrimeFaces Extensions: Extended components
+- Font Awesome: Icon library
+- CKEditor: Rich text editor
+4. Enterprise Technologies
+- CDI: Jakarta Context and Dependency Injection
+- EJB: Enterprise Java Beans 3.2
+- JPA: Jakarta Persistence API
+- JTA: Java Transaction API
+- Bean Validation: Jakarta Validation API
+5. Persistence Layer
+- ORM: Hibernate (EntityManager)
+- Database: Oracle Database
+- Dialect: Oracle10gDialect (customized)
+- Data Source: JTA-managed data source
+6. Web Services
+- SOAP: JAX-WS (SOAP Web Services)
+- REST: JAX-RS (RESTful Services)
+- JSON: Google Gson
+- XML: JAXB, XStream, Apache XMLBeans
+7. Security and Authentication
+- SAML 2.0: Single Sign-On (SSO)
+- Azure AD: Microsoft MSAL4J
+- JWT: Nimbus JOSE JWT
+- Microsoft Graph: Graph SDK
+8. Reporting and Document Processing
+- Reporting Engine: JasperReports
+- Excel: Apache POI
+- PDF: Apache PDFBox
+- Template Engine: FreeMarker
+9. Utility Libraries
+- Apache Commons: Lang, Lang3, Net, FileUpload
+- HTTP Client: Apache HttpComponents Client5
+- SSH: JSch (com.github.mwiede)
+- XML Processing: Dom4j
+- Scripting Engine: Groovy 2.5.8
+10. Testing Frameworks
+- Unit Testing: JUnit
+# Development Standards
+## Code Structure
+- Presentation Layer: JSF XHTML + PrimeFaces components
+- Controller Layer: CDI Managed Beans
+- Business Layer: EJB Session Beans
+- Service Layer: REST/SOAP Web Services
+- Persistence Layer: JPA Entities + DAO
+- Data Layer: Oracle Database
+
+# Development Guidelines
+## When working on the AGBS project, please:
+1. Follow Java EE 8 specifications
+2. Use CDI for dependency injection instead of directly instantiating objects
+3. Use EJB for business logic and transaction management
+4. Use JPA for database operations, avoiding direct JDBC
+5. Use JSF + PrimeFaces for the frontend, avoiding other JS frameworks
+6. Follow a layered architecture to maintain separation of concerns
+7. Use JTA for distributed transaction management
+8. Implement proper exception handling and logging
+9. Design APIs following RESTful principles
+10. Ensure code supports internationalization and localization
+# Common Task Examples
+## Creating a New JSF Page
+- Use XHTML + JSF 2.3 tags
+- Integrate PrimeFaces components
+- Bind to CDI Managed Beans
+- Implement form validation
+## Developing Business Logic
+- Create EJB Session Beans
+- Inject dependencies using CDI
+- Implement transaction management
+- Integrate JPA for data access
+## Building REST APIs
+- Use JAX-RS annotations
+- Implement JSON serialization
+- Handle exceptions and error responses
+- Integrate security authentication
+## Database Operations
+- Use JPA EntityManager
+- Write JPQL queries
+- Implement pagination and sorting
+- Handle lazy loading
+# Notes
+- This project runs on WildFly 25.0.1, ensure compatibility
+- Use Java 8 syntax, avoid Java 9+ features
+- The frontend must use JSF + PrimeFaces, avoid Angular/React/Vue
+- The database is Oracle, be mindful of SQL dialect differences
+- The project uses SAML 2.0 for Single Sign-On
+- All code must use UTF-8 encoding
+- Follow the existing project structure and naming conventions
+```
+
+```md
 /speckit.tasks break this down into tasks.
 ```
 
